@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>IUT Informatique</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: 'Arial', sans-serif;
+        background-color: #0b2a3d;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+
+    .phone {
+        width: 360px;
+        background-color: #2f4a40;
+        border-radius: 30px;
+        padding: 25px 20px;
+        box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+        color: #f7e58d;
+    }
+
+    .header {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .header h1 {
+        margin: 10px 0 5px;
+        font-size: 22px;
+        letter-spacing: 1px;
+    }
+
+    .header p {
+        margin: 0;
+        font-size: 14px;
+    }
+
+    .card {
+        background-color: #8a9c7b;
+        border-radius: 18px;
+        padding: 14px 16px;
+        margin-bottom: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+        transition: transform 0.15s ease;
+    }
+
+    .card:hover {
+        transform: scale(1.02);
+    }
+
+    .card-left {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        color: #f7e58d;
+        font-size: 16px;
+    }
+
+    .icon {
+        width: 36px;
+        height: 36px;
+        background-color: #d8c77a;
+        border-radius: 8px;
+    }
+
+    .arrow {
+        font-size: 20px;
+        color: #f7e58d;
+    }
+
+    /* Carte Site Web */
+    .site {
+        display: block;
+        text-align: center;
+        cursor: default;
+    }
+
+    .site h2 {
+        margin: 0 0 6px;
+        font-size: 18px;
+    }
+
+    .site p {
+        font-size: 13px;
+        margin-bottom: 12px;
+    }
+
+    .btn {
+        background-color: #6f7f6a;
+        border: none;
+        color: #e6e6e6;
+        padding: 12px;
+        width: 100%;
+        border-radius: 25px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: #5f6f5a;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="phone">
+
+    <div class="header">
+        <h1>IUT Informatique</h1>
+        <p>Journées Portes Ouvertes</p>
+    </div>
+
+    <div class="card">
+        <div class="card-left">
+            <div class="icon"></div>
+            Rez de chaussée
+        </div>
+        <div class="arrow">›</div>
+    </div>
+
+    <div class="card">
+        <div class="card-left">
+            <div class="icon"></div>
+            1ère étage
+        </div>
+        <div class="arrow">›</div>
+    </div>
+
+    <div class="card">
+        <div class="card-left">
+            <div class="icon"></div>
+            2ème étage
+        </div>
+        <div class="arrow">›</div>
+    </div>
+
+    <!-- Carte Site Web -->
+    <div class="card site">
+        <div>
+            <h2>Site Web</h2>
+            <p>Allez sur ce site web pour plus d'informations</p>
+            <button class="btn">Appuyer ici</button>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
