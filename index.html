@@ -10,30 +10,27 @@
     body {
         margin: 0;
         font-family: 'Arial', sans-serif;
-        background-color: #0b2a3d;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        background-color: #2f4a40;
         min-height: 100vh;
     }
 
     .phone {
-        width: 360px;
+        width: 100%;
+        min-height: 100vh;
         background-color: #2f4a40;
-        border-radius: 30px;
         padding: 25px 20px;
-        box-shadow: 0 20px 40px rgba(0,0,0,0.4);
         color: #f7e58d;
+        box-sizing: border-box;
     }
 
     .header {
         text-align: center;
-        margin-bottom: 20px;
+        margin-bottom: 25px;
     }
 
     .header h1 {
         margin: 10px 0 5px;
-        font-size: 22px;
+        font-size: 24px;
         letter-spacing: 1px;
     }
 
@@ -45,8 +42,8 @@
     .card {
         background-color: #8a9c7b;
         border-radius: 18px;
-        padding: 14px 16px;
-        margin-bottom: 14px;
+        padding: 16px;
+        margin-bottom: 16px;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -62,7 +59,6 @@
         display: flex;
         align-items: center;
         gap: 12px;
-        color: #f7e58d;
         font-size: 16px;
     }
 
@@ -71,11 +67,11 @@
         height: 36px;
         background-color: #d8c77a;
         border-radius: 8px;
+        flex-shrink: 0;
     }
 
     .arrow {
-        font-size: 20px;
-        color: #f7e58d;
+        font-size: 22px;
     }
 
     /* Carte Site Web */
@@ -83,23 +79,24 @@
         display: block;
         text-align: center;
         cursor: default;
+        margin-top: 25px;
     }
 
     .site h2 {
-        margin: 0 0 6px;
+        margin: 0 0 8px;
         font-size: 18px;
     }
 
     .site p {
         font-size: 13px;
-        margin-bottom: 12px;
+        margin-bottom: 14px;
     }
 
     .btn {
         background-color: #6f7f6a;
         border: none;
         color: #e6e6e6;
-        padding: 12px;
+        padding: 14px;
         width: 100%;
         border-radius: 25px;
         font-size: 16px;
@@ -145,7 +142,6 @@
         <div class="arrow">›</div>
     </div>
 
-    <!-- Carte Site Web -->
     <div class="card site">
         <div>
             <h2>Site Web</h2>
