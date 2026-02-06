@@ -3,8 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>BUT Informatique – JPO</title>
+<title>Informations – JPO BUT Info</title>
 
 <style>
     body {
@@ -60,19 +59,30 @@
         padding: 0 20px 60px;
     }
 
-    .intro {
-        background-color: #2f4a40; /* vert clair un peu plus marqué */
+    .info-box {
+        background-color: #2f4a40; /* fond sombre comme l'intro du précédent */
         color: #f7e58d;
-        padding: 18px 22px;
+        padding: 22px;
         border-radius: 16px;
-        margin-bottom: 40px;
-        font-size: 14px;
+        margin-bottom: 25px;
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    .schedule-text {
+        background-color: #2f4a40; /* une variante plus claire pour le texte d'emploi du temps */
+        color: #f7e58d;
+        padding: 15px 20px;
+        border-radius: 12px;
+        margin-bottom: 20px;
+        font-weight: bold;
     }
 
     .content img {
         width: 100%;
-        border-radius: 18px;
-        box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+        border-radius: 12px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        border: 2px solid #2f4a40;
     }
 
     /* RESPONSIVE */
@@ -102,7 +112,7 @@
             align-items: center;
         }
     }
-</style>
+    </style>
 </head>
 
 <body>
@@ -118,18 +128,27 @@
         </nav>
     </div>
 
-    <h1>BUT Informatique</h1>
+    <h1>Informations</h1>
 </header>
 
 <div class="content">
-    <div class="intro">
-        Bienvenue à la Journée Portes Ouvertes du BUT Informatique de Gradignan.
-        Ici, vous retrouverez toutes les informations nécessaires afin de vous
-        repérer dans le bâtiment.
+
+    <div class="info-box">
+        Aux alentours du BUT informatique, vous pourrez retrouver 2 restaurants CROUS dont un à seulement 3min de marche mais également de nombreux fast food.
+        <br><br>
+        Nous retrouvons également de nombreuses infrastructures sportives permettant ainsi de faire du sport en liberté ou rejoindre l'une des AOP de sport proposé par la formation qui correspond à un club universitaire.
+        <br><br>
+        Les bus sont également assez fréquent et se situe à l'entré de l'IUT permettant ainsi un déplacement pratique pour les étudiants.
     </div>
 
-    <!-- Image du bâtiment -->
-    <img src="batiment.jpg" alt="Bâtiment IUT Informatique">
+    <div class="schedule-text">
+        Voici l'emploie du temps d'une semaine pour un étudiants en 1er année, bien sur l'emploi du temps peux changer d'une semaine à une autre.
+    </div>
+
+    <div class="image-container">
+        <img src="edt.jpg" alt="Emploi du temps BUT1">
+    </div>
+
 </div>
 
 </body>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Ateliers et Présentation – JPO BUT Info</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #a2b08c; /* vert clair pour le reste */
+        color: #2f4a40;
+    }
+
+    /* HEADER */
+    header {
+        background-color: #2f4a40; /* vert foncé */
+        padding: 40px 20px 50px;
+        text-align: center;
+        color: #f7e58d;
+    }
+
+    header .top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1100px;
+        margin: 0 auto 40px;
+    }
+
+    header .logo {
+        font-size: 16px;
+    }
+
+    nav a {
+        color: #f7e58d;
+        text-decoration: none;
+        margin-left: 25px;
+        font-size: 14px;
+        padding-bottom: 6px;
+    }
+
+    nav a.active {
+        border-bottom: 4px solid #f7e58d;
+    }
+
+    header h1 {
+        font-size: 42px;
+        font-weight: 300;
+        letter-spacing: 2px;
+        margin: 0;
+    }
+
+    /* CONTENU */
+    .content {
+        max-width: 900px;
+        margin: 40px auto;
+        padding: 0 20px 60px;
+    }
+
+    .intro {
+        background-color: #2f4a40; /* vert clair un peu plus marqué */
+        color: #f7e58d;
+        padding: 18px 22px;
+        border-radius: 16px;
+        margin-bottom: 40px;
+        font-size: 14px;
+    }
+    .box li {
+        margin-bottom: 8px;
+        background-color: #2f4a40;
+    }
+
+    .highlight {
+        color: #f4b000;
+        font-weight: bold;
+    }
+
+    .content img {
+        width: 100%;
+        border-radius: 18px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+        header .top {
+            flex-direction: column; /* On aligne le logo et le menu verticalement */
+            gap: 20px;
+        }
+
+        nav {
+            display: flex; /* On s'assure qu'il reste visible */
+            flex-wrap: wrap; /* Permet au menu de passer sur deux lignes si besoin */
+            justify-content: center;
+        }
+
+        nav a {
+            margin: 5px 10px; /* On réduit l'espace pour que ça rentre */
+        }
+
+        header h1 {
+            font-size: 30px;
+            margin-top: 20px;
+        }
+
+        .photo-grid {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="top">
+        <div class="logo">JPO – BUT Info</div>
+        <nav>
+            <a href="JPO.html" class="active">Accueil</a>
+            <a href="presentation.html">Ateliers et Présentation</a>
+            <a href="informations.html">Informations</a>
+            <a href="Etudiant.html">Étudiants</a>
+        </nav>
+    </div>
+
+    <h1>Ateliers et<br>Présentation</h1>
+</header>
+
+<div class="separator"></div>
+
+<div class="content">
+
+    <div class="intro">
+        Voici les horaires et lieux des présentations ainsi que les activités proposées
+        par les élèves et enseignants.
+    </div>
+
+    <div class="grid">
+
+        <!-- PRÉSENTATIONS -->
+        <div class="intro">
+            <h2>Présentations :</h2>
+
+            <strong>Rez de chaussée :</strong>
+            <ul>
+                <li>
+                    Salle <span class="highlight">001</span> –
+                    <strong>9h15 / 10h45 / 12h15</strong>
+                    présentation du BUT informatique, par Mme Dutour,
+                    Cheffe de département
+                </li>
+                <li>
+                    Salle <span class="highlight">006</span> –
+                    <strong>10h / 11h30</strong>
+                    présentation du BUT informatique, par Mme Dutour,
+                    Cheffe de département
+                </li>
+            </ul>
+
+            <strong>1er étage :</strong>
+            <ul>
+                <li>
+                    Salle <span class="highlight">105</span> –
+                    <strong>9h30 / 10h30 / 11h45</strong>
+                    présentation du BUT informatique, par M. Journet,
+                    Chef de département adjoint
+                </li>
+            </ul>
+        </div>
+
+        <!-- ATELIERS -->
+        <div class="intro">
+            <h2>Ateliers :</h2>
+
+            <strong>1er étage :</strong>
+            <ul>
+                <li><span class="highlight">Couloir</span> – Exposition : Les décodeuses du numérique (CNRS)</li>
+                <li><span class="highlight">Couloir</span> – Posters sur le travail d’équipe (BUT 1 et 2)</li>
+            </ul>
+
+            <strong>2e étage :</strong>
+            <ul>
+                <li>Salle <span class="highlight">201</span> – Exposition des projets d’affichage pour la JPO</li>
+                <li>Salle <span class="highlight">202</span> – Présentation projets des étudiants de 1re et 2e année</li>
+                <li>Salle <span class="highlight">203</span> – Jeu Turing Machine</li>
+                <li>Salle <span class="highlight">205</span> – Atelier BD (mini-jeu)</li>
+                <li>Salle <span class="highlight">207</span> – Atelier Web (mini-jeu)</li>
+                <li>Salle <span class="highlight">209</span> – Atelier programmation Java (mini-jeu)</li>
+                <li>Salle <span class="highlight">210</span> – Découverte du Robotique</li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>

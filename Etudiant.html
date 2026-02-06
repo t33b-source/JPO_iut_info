@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Étudiants – JPO BUT Info</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #a2b08c; 
+            color: #2f4a40;
+        }
+
+        /* HEADER */
+        header {
+            background-color: #2f4a40; 
+            padding: 40px 20px 50px;
+            text-align: center;
+            color: #f7e58d;
+        }
+
+        header .top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1100px;
+            margin: 0 auto 40px;
+        }
+
+        header .logo {
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: #f7e58d;
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 14px;
+            padding-bottom: 6px;
+            white-space: nowrap; /* Évite que le texte du menu ne revienne à la ligne bizarrement */
+        }
+
+        nav a.active {
+            border-bottom: 4px solid #f7e58d;
+        }
+
+        header h1 {
+            font-size: 42px;
+            font-weight: 300;
+            letter-spacing: 2px;
+            margin: 0;
+        }
+
+        /* CONTENU */
+        .content {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px 60px;
+            text-align: center;
+        }
+
+        .slogan-box {
+            background-color: #2f4a40; 
+            color: #f7e58d;
+            display: inline-block;
+            padding: 15px 30px;
+            border-radius: 12px;
+            margin-bottom: 50px;
+            font-size: 16px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        /* GRILLE PHOTO */
+        .photo-grid {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .photo-container {
+            flex: 1;
+            min-width: 300px;
+            max-width: 400px;
+        }
+
+        .photo-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            border: 3px solid #f7e58d;
+            transition: transform 0.3s ease;
+        }
+
+        /* --- MODIFICATION ICI POUR LE ZOOM / MOBILE --- */
+        @media (max-width: 768px) {
+            header .top {
+                flex-direction: column; /* On aligne le logo et le menu verticalement */
+                gap: 20px;
+            }
+
+            nav {
+                display: flex; /* On s'assure qu'il reste visible */
+                flex-wrap: wrap; /* Permet au menu de passer sur deux lignes si besoin */
+                justify-content: center;
+            }
+
+            nav a {
+                margin: 5px 10px; /* On réduit l'espace pour que ça rentre */
+            }
+
+            header h1 {
+                font-size: 30px;
+                margin-top: 20px;
+            }
+
+            .photo-grid {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="top">
+        <div class="logo">JPO – BUT Info</div>
+        <nav>
+            <a href="JPO.html" class="active">Accueil</a>
+            <a href="presentation.html">Ateliers et Présentation</a>
+            <a href="informations.html">Informations</a>
+            <a href="Etudiant.html">Étudiants</a>
+        </nav>
+    </div>
+
+    <h1>Étudiants</h1>
+</header>
+
+<div class="content">
+    <div class="slogan-box">
+        Stop les préjugés, nos étudiants en informatique ne sont pas que des geeks.
+    </div>
+
+    <div class="photo-grid">
+        <div class="photo-container">
+            <img src="sport1.jpg" alt="Étudiant faisant du sport">
+        </div>
+        <div class="photo-container">
+            <img src="sport2.jpg" alt="Étudiant sur la piste de course">
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
