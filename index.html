@@ -39,6 +39,13 @@
         font-size: 14px;
     }
 
+    /* Carte cliquable */
+    .card-link {
+        text-decoration: none;
+        color: inherit;
+        display: block;
+    }
+
     .card {
         background-color: #8a9c7b;
         border-radius: 18px;
@@ -47,7 +54,6 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        cursor: pointer;
         transition: transform 0.15s ease;
     }
 
@@ -62,11 +68,10 @@
         font-size: 16px;
     }
 
-    .icon {
-        width: 36px;
-        height: 36px;
-        background-color: #d8c77a;
-        border-radius: 8px;
+    .etage-img {
+        width: 40px;
+        height: 40px;
+        object-fit: contain;
         flex-shrink: 0;
     }
 
@@ -118,35 +123,47 @@
         <p>Journées Portes Ouvertes</p>
     </div>
 
-    <div class="card">
-        <div class="card-left">
-            <div class="icon"></div>
-            Rez de chaussée
+    <!-- Rez de chaussée -->
+    <a href="1rdc_etage2.png" target="_blank" class="card-link">
+        <div class="card">
+            <div class="card-left">
+                <img src="1rdc_etage2.png" alt="Rez de chaussée" class="etage-img">
+                Rez de chaussée
+            </div>
+            <div class="arrow">›</div>
         </div>
-        <div class="arrow">›</div>
-    </div>
+    </a>
 
-    <div class="card">
-        <div class="card-left">
-            <div class="icon"></div>
-            1ère étage
+    <!-- 1ère étage -->
+    <a href="1ere_etage2.png" target="_blank" class="card-link">
+        <div class="card">
+            <div class="card-left">
+                <img src="1ere_etage2.png" alt="1ère étage" class="etage-img">
+                1ère étage
+            </div>
+            <div class="arrow">›</div>
         </div>
-        <div class="arrow">›</div>
-    </div>
+    </a>
 
-    <div class="card">
-        <div class="card-left">
-            <div class="icon"></div>
-            2ème étage
+    <!-- 2ème étage -->
+    <a href="2eme_etage2.png" target="_blank" class="card-link">
+        <div class="card">
+            <div class="card-left">
+                <img src="2eme_etage2.png" alt="2ème étage" class="etage-img">
+                2ème étage
+            </div>
+            <div class="arrow">›</div>
         </div>
-        <div class="arrow">›</div>
-    </div>
+    </a>
 
+    <!-- Carte Site Web -->
     <div class="card site">
         <div>
             <h2>Site Web</h2>
             <p>Allez sur ce site web pour plus d'informations</p>
-            <button class="btn">Appuyer ici</button>
+            <a href="https://sites.google.com/view/jpo-info-gradignan/accueil" target="_blank">
+                <button class="btn">Appuyer ici</button>
+            </a>
         </div>
     </div>
 
